@@ -1,0 +1,60 @@
+/* Base badge */
+.badge {
+	display: inline-flex;
+	align-items: center;
+
+	border-radius: 9999px; /* rounded-full */
+	border: 1px solid transparent;
+
+	padding: 0.125rem 0.625rem; /* py-0.5 px-2.5 */
+	font-size: 0.75rem; /* text-xs */
+	font-weight: 600;
+
+	transition: background-color 0.2s ease, color 0.2s ease,
+		border-color 0.2s ease;
+	cursor: default;
+}
+
+/* Focus styles */
+.badge:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 2px var(--ring-color, #22d3ee),
+		0 0 0 4px var(--ring-offset, #020617);
+}
+
+/* ---------------- */
+/* Variants */
+/* ---------------- */
+
+.badge--default {
+	background-color: var(--primary, #06b6d4);
+	color: var(--primary-foreground, #020617);
+}
+
+.badge--default:hover {
+	background-color: rgba(6, 182, 212, 0.8);
+}
+
+.badge--secondary {
+	background-color: var(--secondary, #27272a);
+	color: var(--secondary-foreground, #fafafa);
+}
+
+.badge--secondary:hover {
+	background-color: rgba(39, 39, 42, 0.8);
+}
+
+.badge--destructive {
+	background-color: var(--destructive, #dc2626);
+	color: var(--destructive-foreground, #fafafa);
+}
+
+.badge--destructive:hover {
+	background-color: rgba(220, 38, 38, 0.8);
+}
+
+.badge--outline {
+	background-color: transparent;
+	color: var(--foreground, #fafafa);
+	border-color: currentColor;
+}

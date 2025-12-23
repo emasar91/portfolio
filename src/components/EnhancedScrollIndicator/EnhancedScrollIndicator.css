@@ -1,0 +1,113 @@
+/* Wrapper */
+.scroll-indicator {
+	position: fixed;
+	right: 0.75rem;
+	bottom: 4rem;
+	z-index: 50;
+
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@media (min-width: 640px) {
+	.scroll-indicator {
+		right: 1.5rem;
+		bottom: 5rem;
+	}
+}
+
+/* Visibility states */
+.scroll-indicator.hidden {
+	opacity: 0;
+	transform: translateY(2.5rem);
+	pointer-events: none;
+}
+
+.scroll-indicator.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Inner layout */
+.scroll-indicator-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Button */
+.progress-button {
+	position: relative;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 9999px;
+
+	background-color: rgba(39, 39, 42, 0.8);
+	backdrop-filter: blur(6px);
+
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+@media (min-width: 640px) {
+	.progress-button {
+		width: 3rem;
+		height: 3rem;
+	}
+}
+
+.progress-button:hover {
+	background-color: rgba(63, 63, 70, 0.8);
+}
+
+/* SVG */
+.progress-svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: rotate(-90deg);
+}
+
+/* Icon */
+.icon-wrapper {
+	position: absolute;
+	inset: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chevron-icon {
+	width: 1rem;
+	height: 1rem;
+	color: #22d3ee;
+}
+
+@media (min-width: 640px) {
+	.chevron-icon {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+}
+
+/* Percentage label */
+.progress-label {
+	margin-top: 0.25rem;
+	padding: 0.25rem 0.5rem;
+
+	font-size: 0.75rem;
+	font-weight: 500;
+
+	color: white;
+	background-color: rgba(39, 39, 42, 0.8);
+	backdrop-filter: blur(6px);
+	border-radius: 0.375rem;
+}
+
+@media (min-width: 640px) {
+	.progress-label {
+		margin-top: 0.5rem;
+	}
+}

@@ -1,0 +1,127 @@
+/* ========================= */
+/* Root */
+/* ========================= */
+
+.project-card {
+	height: 100%;
+}
+
+/* ========================= */
+/* Link wrapper */
+/* ========================= */
+
+.project-card__link {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color: inherit;
+}
+
+/* ========================= */
+/* Card container */
+/* ========================= */
+
+.project-card__media {
+	position: relative;
+	height: 10rem; /* h-40 */
+	width: 100%;
+	overflow: hidden;
+
+	background-color: rgba(39, 39, 42, 0.5);
+	border: 1px solid #3f3f46;
+	border-radius: 0.75rem;
+
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (min-width: 640px) {
+	.project-card__media {
+		height: 12rem; /* sm:h-48 */
+	}
+}
+
+/* Hover card */
+.project-card__link:hover .project-card__media {
+	border-color: rgba(34, 211, 238, 0.5);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ========================= */
+/* Image */
+/* ========================= */
+
+.project-card__image {
+	object-fit: cover;
+	transition: transform 0.35s ease;
+}
+
+.project-card__link:hover .project-card__image {
+	transform: scale(1.05);
+}
+
+/* ========================= */
+/* Gradient overlay */
+/* ========================= */
+
+.project-card__overlay {
+	position: absolute;
+	inset: 0;
+
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+	pointer-events: none;
+}
+
+/* ========================= */
+/* Info */
+/* ========================= */
+
+.project-card__info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	padding: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+
+	animation: fadeUp 0.35s ease both;
+}
+
+@media (min-width: 640px) {
+	.project-card__info {
+		padding: 1rem;
+	}
+}
+
+.project-card__category {
+	font-size: 0.75rem;
+	color: #22d3ee;
+}
+
+.project-card__title {
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+	.project-card__title {
+		font-size: 1rem;
+	}
+}
+
+/* ========================= */
+/* Animation */
+/* ========================= */
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(6px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
