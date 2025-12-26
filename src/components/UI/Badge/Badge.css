@@ -56,5 +56,5 @@
 .badge--outline {
 	background-color: transparent;
 	color: var(--foreground, #fafafa);
-	border-color: currentColor;
+	border-color: #3f3f46;
 }

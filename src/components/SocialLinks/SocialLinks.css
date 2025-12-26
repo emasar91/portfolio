@@ -48,8 +48,6 @@
 .social-link__icon svg {
 	width: 0.75rem; /* w-3 */
 	height: 0.75rem; /* h-3 */
-	fill: currentColor;
-	color: #e5e7eb; /* text-zinc-200 */
 }
 
 @media (min-width: 640px) {

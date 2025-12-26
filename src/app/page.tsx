@@ -27,6 +27,7 @@ export const SkillTag = ({ children }: { children: React.ReactNode }) => {
 
 /* ---------------------------------- */
 
+// Home.tsx
 export default function Home() {
 	const projects = getAllProjects()
 	const experienceInfo = getExperienceInfo()
@@ -37,23 +38,22 @@ export default function Home() {
 			{/* Background grid */}
 			<div className="home__background" />
 
-			{/* Header */}
 			<PortfolioHeader />
 
 			<div className="home__container">
 				<div className="home__grid">
 					{/* Profile */}
-					<aside className="home__profile">
+					<div className="home__profile">
 						<EnhancedProfile />
-					</aside>
+					</div>
 
 					{/* Main content */}
-					<section className="home__content">
-						{/* ================= Experience ================= */}
-						<Card className="section-card">
-							<CardContent>
+					<div className="home__content">
+						{/* Experience */}
+						<div className="card">
+							<div className="card__content">
 								<header className="section-header">
-									<BriefCaseIcon color="gray" />
+									<BriefCaseIcon />
 									<h3>Experience</h3>
 								</header>
 
@@ -62,69 +62,42 @@ export default function Home() {
 										<ExperienceCard key={index} {...experience} />
 									))}
 								</div>
-							</CardContent>
-						</Card>
+							</div>
+						</div>
 
-						{/* ================= Credentials ================= */}
 						<CredentialsSection />
 
-						{/* ================= Skills ================= */}
-						<Card className="section-card">
-							<CardContent>
+						{/* Skills */}
+						<div className="card">
+							<div className="card__content">
 								<header className="section-header">
 									<CodeIcon color="gray" />
 									<h3>Technical Skills</h3>
 								</header>
 
 								<div className="skills-grid">
-									<div className="skills-group">
-										<h4>Design</h4>
-										<div className="skills-list">
-											{technicalSkills.design.map((s, i) => (
-												<SkillTag key={i}>{s}</SkillTag>
-											))}
+									{Object.entries(technicalSkills).map(([key, list]) => (
+										<div key={key} className="skills-group">
+											<h4>{key}</h4>
+											<div className="skills-list">
+												{list.map((skill: string, i: number) => (
+													<SkillTag key={i}>{skill}</SkillTag>
+												))}
+											</div>
 										</div>
-									</div>
-
-									<div className="skills-group">
-										<h4>Development</h4>
-										<div className="skills-list">
-											{technicalSkills.development.map((s, i) => (
-												<SkillTag key={i}>{s}</SkillTag>
-											))}
-										</div>
-									</div>
-
-									<div className="skills-group">
-										<h4>UX Methods</h4>
-										<div className="skills-list">
-											{technicalSkills.uxMethods.map((s, i) => (
-												<SkillTag key={i}>{s}</SkillTag>
-											))}
-										</div>
-									</div>
-
-									<div className="skills-group">
-										<h4>Soft Skills</h4>
-										<div className="skills-list">
-											{technicalSkills.softSkills.map((s, i) => (
-												<SkillTag key={i}>{s}</SkillTag>
-											))}
-										</div>
-									</div>
+									))}
 								</div>
-							</CardContent>
-						</Card>
+							</div>
+						</div>
 
-						{/* ================= Projects ================= */}
-						<Card className="section-card">
-							<CardContent>
+						{/* Projects */}
+						<div className="card">
+							<div className="card__content">
 								<header className="section-header section-header--space">
 									<div className="section-header__left">
 										<WorldIcon color="gray" />
 										<h3>Recent Projects</h3>
 									</div>
-
 									<Button variant="ghost" size="sm">
 										View All
 									</Button>
@@ -135,9 +108,9 @@ export default function Home() {
 										<ProjectCard key={index} {...project} />
 									))}
 								</div>
-							</CardContent>
-						</Card>
-					</section>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<footer className="home__footer">

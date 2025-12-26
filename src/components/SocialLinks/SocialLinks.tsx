@@ -13,8 +13,8 @@ interface SocialLinksProps {
 }
 
 const icons = {
-	github: <GithubIcon color="gray" />,
-	linkedin: <LinkedInIcon color="gray" />,
+	github: <GithubIcon />,
+	linkedin: <LinkedInIcon />,
 }
 
 export function SocialLinks({ socialLinks }: SocialLinksProps) {

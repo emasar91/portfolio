@@ -1,3 +1,5 @@
+/* ===== Layout ===== */
+
 .home {
 	min-height: 100vh;
 	background: #000;
@@ -17,7 +19,7 @@
 .home__container {
 	position: relative;
 	z-index: 1;
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 0 auto;
 	padding: 96px 16px 32px;
 }
@@ -41,9 +43,16 @@
 }
 
 .home__profile {
-	position: sticky;
-	top: 96px;
+	position: relative;
+	top: 0;
 	align-self: flex-start;
+}
+
+@media (min-width: 768px) {
+	.home__profile {
+		top: 96px;
+		position: sticky;
+	}
 }
 
 .home__content {
@@ -52,13 +61,20 @@
 	gap: 24px;
 }
 
-/* Sections */
+/* ===== Cards ===== */
 
-.section-card {
+.card {
 	background: rgba(24, 24, 27, 0.7);
 	border: 1px solid #27272a;
-	backdrop-filter: blur(6px);
+	border-radius: 12px;
+	backdrop-filter: blur(8px);
 }
+
+.card__content {
+	padding: 24px;
+}
+
+/* ===== Section headers ===== */
 
 .section-header {
 	display: flex;
@@ -67,32 +83,53 @@
 	margin-bottom: 24px;
 }
 
+.section-header h3 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.section-header svg {
+	width: 20px;
+	height: 20px;
+	color: #22d3ee;
+}
+
 .section-header--space {
 	justify-content: space-between;
 }
 
-.section-header h3 {
-	font-size: 1.1rem;
-	font-weight: 500;
+.section-header__left {
+	display: flex;
+	align-items: center;
+	gap: 8px;
 }
 
-/* Skills */
+/* ===== Experience ===== */
+
+.experience-list {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+/* ===== Skills ===== */
 
 .skills-grid {
 	display: grid;
+	grid-template-columns: 1fr;
 	gap: 24px;
 }
 
 @media (min-width: 768px) {
 	.skills-grid {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
 .skills-group h4 {
-	font-size: 0.85rem;
+	font-size: 14px;
 	color: #a1a1aa;
-	margin-bottom: 8px;
+	margin-bottom: 12px;
 }
 
 .skills-list {
@@ -102,17 +139,19 @@
 }
 
 .skill-tag {
-	background: #27272a;
 	padding: 4px 8px;
+	background: #27272a;
 	border-radius: 999px;
-	font-size: 0.75rem;
+	font-size: 12px;
 	color: #a1a1aa;
+	font-weight: 500;
 }
 
-/* Projects */
+/* ===== Projects ===== */
 
 .projects-grid {
 	display: grid;
+	grid-template-columns: 1fr;
 	gap: 16px;
 }
 
@@ -128,11 +167,11 @@
 	}
 }
 
-/* Footer */
+/* ===== Footer ===== */
 
 .home__footer {
 	margin-top: 32px;
-	font-size: 0.8rem;
-	color: #71717a;
 	text-align: center;
+	font-size: 14px;
+	color: #71717a;
 }

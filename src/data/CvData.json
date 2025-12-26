@@ -1,70 +1,43 @@
 {
 	"meta": {
 		"title": "Emanuel Sarco | Software Developer",
-		"description": "Portfolio website showcasing product design work and skills"
+		"description": "Portafolio web que muestra el trabajo y habilidades"
 	},
 	"personal": {
 		"name": "Emanuel Sarco",
 		"title": "Software Developer",
-		"location": "San Francisco, CA",
+		"location": "Buenos Aires, Argentina",
 		"avatar": "/assets/images/confident-professional.png",
-		"email": "jane.doe@example.com",
-		"phone": "+1 (415) 555-2671",
-		"workingHours": "Monday - Friday, 9am - 5pm PST",
+		"email": "emasar91@gmail.com",
+		"phone": "+54 9 11 6480 3422",
 		"availableForWork": true,
-		"badges": ["UI/UX", "Product Design", "Prototyping"],
+		"badges": ["Web Developer", "React.js", "Next.js"],
 		"social": [
 			{
 				"platform": "GitHub",
-				"url": "#",
+				"url": "https://github.com/emasar91",
 				"icon": "github"
 			},
 			{
 				"platform": "LinkedIn",
-				"url": "#",
+				"url": "https://www.linkedin.com/in/emanuel-sarco/",
 				"icon": "linkedin"
 			}
 		]
 	},
 	"about": {
-		"bio": "I create user-centered digital experiences that solve real problems. Passionate about accessibility and ethical design with over 5 years of experience in product design and user experience research.",
-		"focus": [
-			"Creating intuitive and accessible digital products",
-			"Leading design teams and establishing design systems",
-			"Conducting user research to inform product decisions"
-		],
+		"bio": "Desarrollador Front End con 5 años de experiencia creando aplicaciones web escalables con React, Next.js, TypeScript y JavaScript. Apasionado por el aprendizaje continuo y la mejora de rendimiento, con foco en optimizar interfaaces y flujos de usuario. Busco nuevos desafíos donde aplicar mi experiencia en arquitectura frontend, diseño de componentes reutilizables y colaboración ágil en equipos.",
 		"languages": [
 			{
-				"name": "English",
-				"proficiency": "Native",
-				"level": 100,
-				"flag": "🇺🇸"
+				"name": "Español",
+				"proficiency": "Nativo",
+				"level": 100
 			},
 			{
-				"name": "Spanish",
-				"proficiency": "Fluent",
-				"level": 80,
-				"flag": "🇪🇸"
-			},
-			{
-				"name": "French",
-				"proficiency": "Intermediate",
-				"level": 60,
-				"flag": "🇫🇷"
-			},
-			{
-				"name": "German",
-				"proficiency": "Basic",
-				"level": 30,
-				"flag": "🇩🇪"
+				"name": "Inglés",
+				"proficiency": "Intermedio",
+				"level": 50
 			}
-		],
-		"interests": [
-			"Design Systems",
-			"Accessibility",
-			"Typography",
-			"Motion Design",
-			"Photography"
 		]
 	},
 	"navigation": [
