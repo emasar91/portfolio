@@ -108,7 +108,7 @@ export function TabsContent({ value, children }: TabsContentProps) {
 			setHeight(value, element.scrollHeight)
 		}
 
-		updateHeight() // inicial
+		updateHeight()
 
 		const observer = new ResizeObserver(updateHeight)
 		observer.observe(element)
