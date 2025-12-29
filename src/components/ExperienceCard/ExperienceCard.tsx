@@ -8,7 +8,6 @@ interface ExperienceCardProps {
 	title: string
 	company: string
 	period: string
-	description: string
 	achievements: string[]
 	technologies: string[]
 }
@@ -17,7 +16,6 @@ export function ExperienceCard({
 	title,
 	company,
 	period,
-	description,
 	achievements,
 	technologies,
 }: ExperienceCardProps) {
@@ -32,15 +30,13 @@ export function ExperienceCard({
 				<time className="experience-card__period">{period}</time>
 			</header>
 
-			<p className="experience-card__description">{description}</p>
-
 			<section className="experience-card__section">
-				<h5 className="experience-card__subtitle">Key Achievements</h5>
+				<h5 className="experience-card__subtitle">Logros clave</h5>
 
 				<ul className="experience-card__list">
 					{achievements.map((achievement, index) => (
 						<li key={index} className="experience-card__item">
-							<CheckIcon color="gray" />
+							<CheckIcon />
 							<span>{achievement}</span>
 						</li>
 					))}
@@ -48,7 +44,7 @@ export function ExperienceCard({
 			</section>
 
 			<section className="experience-card__section">
-				<h5 className="experience-card__subtitle">Technologies & Skills</h5>
+				<h5 className="experience-card__subtitle">Stack tecnológico</h5>
 
 				<div className="experience-card__tags">
 					{technologies.map((tech, index) => (

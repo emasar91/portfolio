@@ -1,0 +1,9 @@
+.project-sidebar {
+	grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+	.project-sidebar {
+		grid-column: 3 / 3;
+	}
+}

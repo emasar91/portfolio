@@ -1,0 +1,62 @@
+/* ===== Projects ===== */
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
+}
+
+@media (min-width: 640px) {
+	.projects-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1024px) {
+	.projects-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* ===== Cards ===== */
+
+.card {
+	background: rgba(24, 24, 27, 0.7);
+	border: 1px solid #27272a;
+	border-radius: 12px;
+	backdrop-filter: blur(8px);
+}
+
+.card__content {
+	padding: 24px;
+}
+
+/* ===== Section headers ===== */
+
+.section-header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 24px;
+}
+
+.section-header h3 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.section-header svg {
+	width: 20px;
+	height: 20px;
+	color: #22d3ee;
+}
+
+.section-header--space {
+	justify-content: space-between;
+}
+
+.section-header__left {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}

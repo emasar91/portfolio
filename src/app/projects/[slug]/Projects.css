@@ -1,0 +1,63 @@
+.project-page {
+	min-height: 100vh;
+	background: #000;
+	color: #fff;
+}
+
+.background-grid {
+	position: fixed;
+	inset: 0;
+	background: radial-gradient(#333 1px, transparent 1px);
+	background-size: 20px 20px;
+	opacity: 0.2;
+	z-index: 0;
+}
+
+.project-container {
+	position: relative;
+	z-index: 1;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 96px 16px 32px;
+}
+
+.project-layout {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1.5rem;
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 14px;
+	border-radius: 8px;
+	font-size: 14px;
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+	background: linear-gradient(to right, #06b6d4, #3b82f6);
+}
+
+.btn-primary:hover {
+	transform: translateY(-1px);
+}
+
+.btn-outline {
+	border: 1px solid #3f3f46;
+}
+
+.project-nav {
+	margin-bottom: 1.5rem;
+}
+
+.project-back {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	color: #a1a1aa;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}

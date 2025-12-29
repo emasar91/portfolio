@@ -1,16 +1,11 @@
 import portfolioData from '@/data/CvData.json'
-import {
-	projects,
-	getAllProjects,
-	getProjectBySlug,
-	getRelatedProjects,
-} from '@/lib/projects'
+import { projects, getAllProjects, getProjectBySlug } from '@/lib/projects'
 
 // Export the portfolio data
 export const data = portfolioData
 
 // Export the projects data
-export { projects, getAllProjects, getProjectBySlug, getRelatedProjects }
+export { projects, getAllProjects, getProjectBySlug }
 
 // Type definitions for the portfolio data
 export type PortfolioData = typeof portfolioData

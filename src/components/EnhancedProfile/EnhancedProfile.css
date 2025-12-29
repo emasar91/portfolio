@@ -44,6 +44,7 @@
 	color: #a1a1aa;
 	line-height: 1.25rem;
 	font-weight: 500;
+	margin-bottom: 0;
 }
 
 .language {
@@ -104,6 +105,7 @@
 	line-height: 2rem;
 	color: #fff;
 	font-weight: 700;
+	margin-bottom: 0;
 }
 
 .profile-header__info {
@@ -125,6 +127,8 @@
 .profile-section__bio {
 	font-size: 0.875rem;
 	line-height: 1.25rem;
+	color: #ffffff;
+	margin-bottom: 0;
 }
 
 .profile-footer {
@@ -175,7 +179,7 @@
 
 .contact-list__icon {
 	margin-right: 0.75rem;
-	margin-top: -2px;
+	margin-top: 2px;
 }
 
 .contact-list__label {
@@ -186,4 +190,17 @@
 	font-size: 0.875rem;
 	line-height: 1.25rem;
 	color: #a1a1aa;
+}
+
+.home__profile {
+	position: relative;
+	top: 0;
+	align-self: flex-start;
+}
+
+@media (min-width: 768px) {
+	.home__profile {
+		top: 96px;
+		position: sticky;
+	}
 }

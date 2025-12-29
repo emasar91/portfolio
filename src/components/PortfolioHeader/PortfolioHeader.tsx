@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { getNavItems, getPersonalInfo } from '@/lib/data'
 import './PortfolioHeader.css'
+import { usePathname } from 'next/navigation'
 
 export function PortfolioHeader() {
 	const [scrolled, setScrolled] = useState(false)
@@ -37,11 +38,14 @@ export function PortfolioHeader() {
 
 		window.addEventListener('scroll', handleScroll)
 		return () => window.removeEventListener('scroll', handleScroll)
-	}, [navItems])
+	}, [navItems, activeSection])
+
+	const pathname = usePathname()
+	const isHome = pathname === '/'
 
 	return (
 		<header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
-			<div className="header__container">
+			<nav className="header__container">
 				{/* Logo */}
 				<Link href="/" className="brand group">
 					<div className="brand__name">
@@ -54,17 +58,24 @@ export function PortfolioHeader() {
 				{/* Desktop navigation */}
 				<nav className="nav nav--desktop">
 					{navItems.map((item) => {
+						const section = item.href.replace('#', '')
 						const isActive =
 							item.href === '/'
 								? activeSection === ''
-								: activeSection === item.href.substring(1)
+								: activeSection === section
+
+						const href = isHome
+							? item.href
+							: item.href.startsWith('#')
+							? `/${item.href}`
+							: item.href
 
 						return (
 							<Link
 								key={item.label}
-								href={item.href}
+								href={href}
 								className={`nav__link ${isActive ? 'is-active' : ''}`}
-								onClick={() => setActiveSection(item.href.substring(1))}
+								onClick={() => setActiveSection(section)}
 							>
 								<span className="nav__text">{item.label}</span>
 								<span className="nav__bg" />
@@ -75,7 +86,7 @@ export function PortfolioHeader() {
 						)
 					})}
 				</nav>
-			</div>
+			</nav>
 		</header>
 	)
 }

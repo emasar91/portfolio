@@ -11,7 +11,13 @@
 		"email": "emasar91@gmail.com",
 		"phone": "+54 9 11 6480 3422",
 		"availableForWork": true,
-		"badges": ["Web Developer", "React.js", "Next.js"],
+		"badges": [
+			"Web Developer",
+			"React.js",
+			"Next.js",
+			"TypeScript",
+			"JavaScript"
+		],
 		"social": [
 			{
 				"platform": "GitHub",
@@ -47,62 +53,84 @@
 		},
 		{
 			"label": "Experiencia",
-			"href": "#experience"
+			"href": "#experiencia"
 		},
 		{
 			"label": "Estudios",
-			"href": "#credentials"
+			"href": "#estudios"
 		},
 		{
 			"label": "Habilidades",
-			"href": "#skills"
+			"href": "#habilidades"
 		},
 		{
 			"label": "Proyectos",
-			"href": "#projects"
+			"href": "#proyectos"
 		}
 	],
 	"experience": [
 		{
-			"title": "Senior Product Designer",
-			"company": "TechCorp Inc.",
-			"period": "2021 - Present",
-			"description": "Lead the design of flagship products, managing a team of 3 designers. Implemented a design system that reduced design inconsistencies by 60% and improved development time by 40%. Conducted user research and usability testing to inform product decisions.",
+			"title": "Desarrollador Front End React/Next",
+			"company": "OneInfo Consulting - Banco Galicia",
+			"period": "11/2024 - 08/2025",
 			"achievements": [
-				"Redesigned the main dashboard, increasing user engagement by 35%",
-				"Led the design for 3 major feature launches, contributing to a 25% increase in user retention",
-				"Established design processes that improved team collaboration and product quality"
-			],
-			"technologies": ["Figma", "Adobe XD", "Prototyping", "User Research"]
-		},
-		{
-			"title": "UX Designer",
-			"company": "Design Studio X",
-			"period": "2018 - 2021",
-			"description": "Collaborated with cross-functional teams to design intuitive and engaging user experiences for various client projects. Created wireframes, prototypes, and high-fidelity designs for web and mobile applications.",
-			"achievements": [
-				"Designed interfaces for 12+ client projects across fintech, healthcare, and e-commerce",
-				"Improved conversion rates by an average of 22% through data-driven design iterations",
-				"Mentored junior designers and facilitated design thinking workshops"
+				"Refactoricé componentes clave para mejorar la mantenibilidad y reutilización del código, migrando lógica de endpoints hacia hooks personalizados y estado global (Zustand).",
+				"Implementé nuevas funcionalidades desde diseños en Figma y desarrollé interfaces coherentes cuando no había prototipos disponibles.",
+				"Corregí errores funcionales y visuales en la SPA, contribuyendo a una experiencia de usuario más fluida y consistente."
 			],
 			"technologies": [
-				"Sketch",
-				"InVision",
-				"User Testing",
-				"Information Architecture"
+				"Next.js",
+				"React",
+				"TypeScript",
+				"Formik",
+				"Zustand",
+				"API Rest",
+				"CSS",
+				"Brick"
 			]
 		},
 		{
-			"title": "UI/UX Intern",
-			"company": "Creative Solutions",
-			"period": "2017 - 2018",
-			"description": "Assisted the design team in creating visual assets and interface components. Participated in brainstorming sessions and contributed to the design of marketing websites and mobile applications.",
+			"title": "Desarrollador Front End React/Next",
+			"company": "ESolutions - Konecta",
+			"period": "07/2022 - 08/2024",
 			"achievements": [
-				"Redesigned the company website, improving mobile responsiveness",
-				"Created a component library that streamlined the design process",
-				"Conducted competitive analysis for 5 client projects"
+				"Mejoré la performance de la aplicación, reduciendo en un 20% el tiempo de carga entre pantallas.",
+				"Desarrollé un módulo de personalización de mensajes con emojis, mejorando la experiencia de usuario.",
+				"Corregí más de 50 errores funcionales o de diseño, asegurando la estabilidad del producto."
 			],
-			"technologies": ["Adobe Creative Suite", "HTML/CSS", "Wireframing"]
+			"technologies": [
+				"Next.js",
+				"React",
+				"TypeScript",
+				"Axios",
+				"Formik",
+				"Material UI",
+				"API Rest",
+				"CSS",
+				"Styled-Component",
+				"ContextApi"
+			]
+		},
+		{
+			"title": "Desarrollador Full Stack React/Node",
+			"company": "Sirena (Zenvia)",
+			"period": "07/2020 - 06/2022",
+			"achievements": [
+				"Desarrollé más de 5 integraciones para el Marketplace de Sirena, incrementando en un 30% las aplicaciones disponibles Trello, Google Drive, MailChimp, Cotizaciones, entre otras).",
+				"Participé en el diseño conceptual y la configuración de integraciones, facilitando la adopción por parte de los usuarios."
+			],
+			"technologies": [
+				"React",
+				"Mongo",
+				"Node",
+				"Koa",
+				"Axios",
+				"Redux",
+				"Formik",
+				"Material UI",
+				"CSS",
+				"API Rest"
+			]
 		}
 	],
 	"credentials": {
@@ -128,63 +156,51 @@
 		],
 		"education": [
 			{
-				"degree": "Master of Fine Arts in Design",
-				"institution": "Rhode Island School of Design",
-				"year": "2015-2017",
-				"logo": "/assets/images/generic-art-school-logo.png"
+				"degree": "Tecnicatura Superior en Programación",
+				"institution": "Teclab Instituto Superior",
+				"year": "2022-2024",
+				"logo": "/assets/images/teclab.jpg",
+				"description": "Graduado/Recibido"
 			},
 			{
-				"degree": "Bachelor of Arts in Visual Communication",
-				"institution": "California Institute of the Arts",
-				"year": "2011-2015",
-				"logo": "/assets/images/calarts-logo.png"
+				"degree": "Desarrollador Full Stack JavaScript",
+				"institution": "UTN BA",
+				"year": "2020",
+				"logo": "/assets/images/utn.ba-logo.jpg",
+				"description": "200 Hs Cátedra"
+			},
+			{
+				"degree": "Licenciatura en Sistemas",
+				"institution": "Universidad Nacional General Sarmiento",
+				"year": "2015-2017",
+				"logo": "/assets/images/ungs.jpg",
+				"description": "Cursado hasta 2° año"
 			}
-		],
-		"skills": [
-			"UI Design",
-			"UX Research",
-			"Design Systems",
-			"Wireframing",
-			"Prototyping",
-			"User Testing",
-			"Accessibility",
-			"Design Thinking"
 		]
 	},
 	"technicalSkills": {
-		"design": [
-			"Figma",
-			"Sketch",
-			"Adobe XD",
-			"Illustrator",
-			"Photoshop",
-			"InVision",
-			"Principle",
-			"Framer"
-		],
-		"development": [
-			"HTML/CSS",
-			"JavaScript",
+		"Lenguajes": ["JavaScript", "TypeScript"],
+		"Frameworks/Librerías": [
 			"React",
-			"Tailwind",
-			"SCSS",
+			"Next.js",
+			" Node.js,",
+			"Zustand",
+			"Redux",
+			"Context Api",
+			"Formik",
+			"Material UI"
+		],
+		"Herramientas": [
 			"Git",
-			"Responsive Design"
+			"GitHub",
+			"GitLab",
+			"Bitbucket",
+			"Jenkins",
+			"Postman",
+			"VS Code",
+			"Jira"
 		],
-		"uxMethods": [
-			"User Research",
-			"Usability Testing",
-			"Wireframing",
-			"Prototyping",
-			"Information Architecture",
-			"User Flows"
-		],
-		"softSkills": [
-			"Team Leadership",
-			"Project Management",
-			"Client Communication",
-			"Mentoring",
-			"Presentations"
-		]
+		"Base de datos": ["MongoDB"],
+		"Metodología Ágil": ["Scrum"]
 	}
 }

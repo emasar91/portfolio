@@ -1,4 +1,4 @@
-export const WorldIcon = ({ color }: { color: string }) => {
+export const WorldIcon = () => {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -6,7 +6,7 @@ export const WorldIcon = ({ color }: { color: string }) => {
 			height="24"
 			viewBox="0 0 24 24"
 			fill="none"
-			stroke={color}
+			stroke="currentColor"
 			strokeWidth="2"
 			strokeLinecap="round"
 			strokeLinejoin="round"

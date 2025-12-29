@@ -3,26 +3,24 @@
 import Image from 'next/image'
 import './CredentialsSection.css'
 
-import { Card, CardContent } from '../UI/Card/Card'
 import { getCredentialsInfo } from '@/lib/data'
 import { AwardsIcon } from '@/assets/icons/AwardsIcon'
 import { EducationIcon } from '@/assets/icons/EducationIcon'
-import { SkillTag } from '@/app/page'
 
 export function CredentialsSection() {
 	const credentialsInfo = getCredentialsInfo()
 
 	return (
-		<Card className="credentials-card">
-			<CardContent className="credentials-card__content">
+		<div className="credentials-card" id="estudios">
+			<div className="credentials-card__content">
 				<header className="credentials-card__header">
-					<AwardsIcon color="gray" />
-					<h3>Credentials</h3>
+					<AwardsIcon />
+					<h3 className="section-header__title">Credenciales</h3>
 				</header>
 
 				<div className="credentials-card__sections">
 					{/* ================= Certifications ================= */}
-					<section className="credentials-section">
+					{/* <section className="credentials-section">
 						<h4 className="credentials-section__title">
 							<AwardsIcon />
 							Professional Certifications
@@ -51,12 +49,12 @@ export function CredentialsSection() {
 								</li>
 							))}
 						</ul>
-					</section>
+					</section> */}
 
 					{/* ================= Education ================= */}
 					<section className="credentials-section">
 						<h4 className="credentials-section__title">
-							<EducationIcon color="gray" />
+							<EducationIcon />
 							Education
 						</h4>
 
@@ -69,6 +67,9 @@ export function CredentialsSection() {
 												src={edu.logo || '/placeholder.svg'}
 												alt={edu.institution}
 												fill
+												style={{
+													transform: 'scale(1.2)',
+												}}
 												className="credentials-item__image"
 											/>
 										</div>
@@ -79,27 +80,14 @@ export function CredentialsSection() {
 										<p>
 											{edu.institution} • {edu.year}
 										</p>
+										<p>{edu.description}</p>
 									</div>
 								</li>
 							))}
 						</ul>
 					</section>
-
-					{/* ================= Skills ================= */}
-					<section className="credentials-section">
-						<h4 className="credentials-section__title">
-							<AwardsIcon color="gray" />
-							Skills & Expertise
-						</h4>
-
-						<div className="credentials-skills">
-							{credentialsInfo.skills.map((skill, index) => (
-								<SkillTag key={index}>{skill}</SkillTag>
-							))}
-						</div>
-					</section>
 				</div>
-			</CardContent>
-		</Card>
+			</div>
+		</div>
 	)
 }
