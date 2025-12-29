@@ -42,7 +42,7 @@ export function EnhancedProfile() {
 						<div className="profile-header__info">
 							<div className="profile-header__avatar">
 								<Image
-									src={'/placeholder.svg'}
+									src={personalInfo.avatar}
 									alt={personalInfo.name}
 									fill
 									className="profile-header__image"

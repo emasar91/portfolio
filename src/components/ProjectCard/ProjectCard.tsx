@@ -11,7 +11,6 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ title, thumbnailImage, slug }: ProjectCardProps) {
-	console.log('🚀 ~ ProjectCard ~ slug:', slug)
 	return (
 		<article className="project-card">
 			<Link
