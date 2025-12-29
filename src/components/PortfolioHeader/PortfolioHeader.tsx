@@ -2,8 +2,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { getNavItems, getPersonalInfo } from '@/lib/data'
-import './PortfolioHeader.css'
 import { usePathname } from 'next/navigation'
+import './PortfolioHeader.css'
 
 export function PortfolioHeader() {
 	const [scrolled, setScrolled] = useState(false)
@@ -55,14 +55,13 @@ export function PortfolioHeader() {
 					<span className="brand__title">/ {personalInfo.title}</span>
 				</Link>
 
-				{/* Desktop navigation */}
 				<nav className="nav nav--desktop">
 					{navItems.map((item) => {
 						const section = item.href.replace('#', '')
 						const isActive =
 							item.href === '/'
 								? activeSection === ''
-								: activeSection === section
+								: activeSection === item.href.substring(1)
 
 						const href = isHome
 							? item.href

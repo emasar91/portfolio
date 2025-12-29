@@ -84,25 +84,51 @@
 
 /* Navigation desktop */
 .nav--desktop {
+	display: flex;
 	gap: 0.25rem;
 	margin: 1rem 0 0.5rem 0;
 }
 
 @media (min-width: 768px) {
 	.nav--desktop {
-		display: flex;
 		margin: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.nav--desktop {
+		width: 100%;
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space: nowrap;
+
+		-webkit-overflow-scrolling: touch;
+		scroll-behavior: smooth;
+	}
+
+	.nav--desktop::-webkit-scrollbar {
+		display: none;
+	}
+
+	.nav__link {
+		flex-shrink: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.header__container {
+		align-items: stretch;
 	}
 }
 
 .nav__link {
 	position: relative;
 	padding: 0.5rem 0.75rem;
-	font-size: 0.875rem;
 	color: #a1a1aa;
 	text-decoration: none;
 	overflow: hidden;
 	transition: color 0.3s;
+	font-size: 0.875rem;
 }
 
 .nav__link:hover,

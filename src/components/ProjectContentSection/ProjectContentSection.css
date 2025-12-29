@@ -102,6 +102,7 @@ ul li {
 /* Imagen */
 .gallery-image {
 	object-fit: cover; /* 🔥 llena todo sin deformar */
+	object-position: top center;
 }
 
 @media (max-width: 640px) {

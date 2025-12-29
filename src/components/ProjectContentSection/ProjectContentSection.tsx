@@ -1,9 +1,15 @@
+'use client'
+
 import { Project } from '@/lib/projects'
 import Image from 'next/image'
 import { OpenliveIcon } from '@/assets/icons/OpenliveIcon'
 import './ProjectContentSection.css'
+import { useState } from 'react'
+import { ImageModal } from '../ImageModal/ImageModal'
 
 function ProjectContentSection({ project }: { project: Project }) {
+	const [open, setOpen] = useState({ open: false, src: '', alt: '' })
+
 	return (
 		<section className="project-content">
 			<article className="content">
@@ -53,7 +59,13 @@ function ProjectContentSection({ project }: { project: Project }) {
 
 					<div className="gallery">
 						{project.gallery.map((img, i) => (
-							<figure key={i} className="gallery-item">
+							<figure
+								key={i}
+								className="gallery-item"
+								onClick={() =>
+									setOpen({ open: true, src: img.url, alt: img.caption })
+								}
+							>
 								<Image
 									src={img.url}
 									alt={img.caption}
@@ -65,6 +77,13 @@ function ProjectContentSection({ project }: { project: Project }) {
 					</div>
 				</article>
 			)}
+
+			<ImageModal
+				src={open.src}
+				alt={open.alt}
+				isOpen={open.open}
+				onClose={() => setOpen({ open: false, src: '', alt: '' })}
+			/>
 		</section>
 	)
 }
