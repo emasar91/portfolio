@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		siteName: 'Emanuel Sarco Portfolio',
 		images: [
 			{
-				url: '/assets/images/profile.png',
+				url: '/assets/images/miniature.png',
 				width: 1200,
 				height: 630,
 				alt: 'Emanuel Sarco - Software Developer',
