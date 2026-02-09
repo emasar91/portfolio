@@ -21,12 +21,14 @@ export interface Project {
   gallery?: ProjectGalleryImage[]
   client?: string
   liveUrl?: string
+  icon: string
 }
 
 const projects: Project[] = [
   {
     id: 1,
     slug: "trello-clone",
+    icon: "/assets/images/trello/trello.png",
     title: "Trello Clone",
     description: [
       "Clon funcional de Trello desarrollado como proyecto de portafolio, enfocado en reproducir un flujo Kanban realista y en demostrar buenas prácticas de arquitectura frontend, más allá de la apariencia visual.",
@@ -47,10 +49,10 @@ const projects: Project[] = [
       "React",
       "Next.js",
       "TypeScript",
-      "Firebase",
+      "Firebase (Authentication, Realtime Database, Storage)",
       "Zustand",
       "Css",
-      "Dnd kit",
+      "Dnd kit (Drag & Drop)",
       "Axios",
       "MongoDb",
     ],
@@ -83,6 +85,69 @@ const projects: Project[] = [
       },
     ],
     liveUrl: "https://emasar-trello-clone.vercel.app",
+  },
+  {
+    id: 2,
+    slug: "telegram-clone",
+    icon: "/assets/images/telegram/telegram.png",
+    title: "Telegram Clone",
+    description: [
+      "Clon funcional de Telegram desarrollado como proyecto de portafolio, enfocado en replicar una experiencia de mensajería en tiempo real y en demostrar buenas prácticas de arquitectura frontend, priorizando la experiencia de usuario y la integración con servicios externos.",
+      "La aplicación permite la comunicación entre usuarios mediante chats individuales y grupales, envío de archivos multimedia y videollamadas, con especial énfasis en la sincronización en tiempo real, el manejo del estado y la escalabilidad de la interfaz.",
+      "Construido con Next.js (App Router) y TypeScript, el proyecto prioriza la mantenibilidad, la separación de responsabilidades y la integración eficiente con servicios backend, siguiendo patrones utilizados en aplicaciones modernas de mensajería y comunicación en tiempo real.",
+    ],
+    features: [
+      "Implementación de un sistema de mensajería en tiempo real utilizando Stream para chats y videollamadas",
+      "Envío y recepción de mensajes, imágenes y videos con actualización instantánea de la conversación",
+      "Panel de notificaciones en tiempo real que informa nuevas interacciones, mensajes y llamadas entrantes",
+      "Sistema de autenticación y gestión de usuarios mediante Clerk",
+      "Persistencia de usuarios, conversaciones y eventos utilizando Convex como backend serverless",
+      "Gestión completa del ciclo de llamadas (iniciar, rechazar, abandonar y finalizar)",
+      "Implementación de un Chat AI integrado utilizando el SDK de Groq, diseñado para conversaciones naturales y asistencia dentro de la aplicación",
+      "Diseño responsive con comportamiento consistente en desktop y mobile",
+    ],
+    technologies: [
+      "React",
+      "Next.js (App Router)",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Toastify",
+      "Lucide Icons",
+      "Stream (Chat y Video SDK)",
+      "Clerk (Autenticación)",
+      "Convex (Backend serverless y base de datos en tiempo real)",
+      "Groq SDK (Chat AI)",
+    ],
+    coverImage: "/assets/images/telegram/telegram-clone.png",
+    thumbnailImage: "/assets/images/telegram/telegram-clone.png",
+    gallery: [
+      {
+        url: "/assets/images/telegram/telegram-screenshot-1.png",
+        caption: "Home Screen with skills",
+      },
+      {
+        url: "/assets/images/telegram/telegram-screenshot-2.png",
+        caption: "Empty chat View",
+      },
+      {
+        url: "/assets/images/telegram/telegram-screenshot-3.png",
+        caption: "New Chat whit Bot as default",
+      },
+      {
+        url: "/assets/images/telegram/telegram-screenshot-4.png",
+        caption: "Chat View with messages",
+      },
+      {
+        url: "/assets/images/telegram/telegram-screenshot-5.png",
+        caption: "Incomming call notification",
+      },
+      {
+        url: "/assets/images/telegram/telegram-screenshot-6.png",
+        caption: "Message notification",
+      },
+    ],
+    liveUrl: "https://emasar-telegram-clone.vercel.app",
   },
 ]
 

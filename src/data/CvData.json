@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Emanuel Sarco | Software Developer",
+    "title": "Emanuel Sarco | Software Developer E2E",
     "description": "Portafolio web que muestra el trabajo y habilidades"
   },
   "personal": {
     "name": "Emanuel Sarco",
-    "title": "Software Developer",
+    "title": "Software Developer E2E",
     "location": "Buenos Aires, Argentina",
     "avatar": "/assets/images/profile.png",
     "email": "emasar91@gmail.com",
@@ -28,11 +28,16 @@
         "platform": "LinkedIn",
         "url": "https://www.linkedin.com/in/emanuel-sarco/",
         "icon": "linkedin"
+      },
+      {
+        "platform": "Download",
+        "url": "/assets/pdf/CV Sarco Emanuel FrontEnd.pdf",
+        "icon": "download"
       }
     ]
   },
   "about": {
-    "bio": "Desarrollador Front End con 5 años de experiencia creando aplicaciones web escalables con React, Next.js, TypeScript y JavaScript. Apasionado por el aprendizaje continuo y la mejora de rendimiento, con foco en optimizar interfaaces y flujos de usuario. Busco nuevos desafíos donde aplicar mi experiencia en arquitectura frontend, diseño de componentes reutilizables y colaboración ágil en equipos.",
+    "bio": "Desarrollador Frontend (React) con 5 años de experiencia desarrollando aplicaciones web escalables con React, Next.js y TypeScript. Trabajo con enfoque Fullstack, colaborando en la integración con servicios Backend (Node.js, Express) y en la definición de contratos de API para garantizar flujos de datos robustos y mantenibles. Especializado en optimización de performance y arquitectura de componentes reutilizables, con experiencia en el sector bancario y en proyectos de alta complejidad.",
     "languages": [
       {
         "name": "Español",
@@ -117,7 +122,8 @@
       "period": "07/2020 - 06/2022",
       "achievements": [
         "Desarrollé más de 5 integraciones para el Marketplace de Sirena, incrementando en un 30% las aplicaciones disponibles Trello, Google Drive, MailChimp, Cotizaciones, entre otras).",
-        "Participé en el diseño conceptual y la configuración de integraciones, facilitando la adopción por parte de los usuarios."
+        "Participé en el diseño conceptual y la configuración de integraciones, facilitando la adopción por parte de los usuarios.",
+        "Implementé el backend completo de las integraciones, diseñando APIs y lógica de negocio con Node.js, Express y MongoDB, garantizando escalabilidad, seguridad y consistencia de datos."
       ],
       "technologies": [
         "React",

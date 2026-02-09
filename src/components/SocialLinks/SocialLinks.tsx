@@ -1,39 +1,42 @@
-import { GithubIcon } from '@/assets/icons/GithubIcon'
-import './SocialLinks.css'
-import { LinkedInIcon } from '@/assets/icons/LinkedInIcon'
+import { GithubIcon } from "@/assets/icons/GithubIcon"
+import "./SocialLinks.css"
+import { LinkedInIcon } from "@/assets/icons/LinkedInIcon"
+import { DownloadIcon } from "@/assets/icons/DownloadIcon"
 
 interface SocialLink {
-	platform: string
-	url: string
-	icon: string
+  platform: string
+  url: string
+  icon: string
 }
 
 interface SocialLinksProps {
-	socialLinks: SocialLink[]
+  socialLinks: SocialLink[]
 }
 
 const icons = {
-	github: <GithubIcon />,
-	linkedin: <LinkedInIcon />,
+  github: <GithubIcon />,
+  linkedin: <LinkedInIcon />,
+  download: <DownloadIcon />,
 }
 
 export function SocialLinks({ socialLinks }: SocialLinksProps) {
-	return (
-		<div className="social-links">
-			{socialLinks.map((link, index) => (
-				<a
-					key={index}
-					href={link.url}
-					className="social-link"
-					aria-label={link.platform}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<span className="social-link__icon">
-						{icons[link.icon as keyof typeof icons]}
-					</span>
-				</a>
-			))}
-		</div>
-	)
+  return (
+    <div className="social-links">
+      {socialLinks.map((link, index) => (
+        <a
+          key={index}
+          href={link.url}
+          download={link.icon === "download"}
+          className="social-link"
+          aria-label={link.platform}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="social-link__icon">
+            {icons[link.icon as keyof typeof icons]}
+          </span>
+        </a>
+      ))}
+    </div>
+  )
 }

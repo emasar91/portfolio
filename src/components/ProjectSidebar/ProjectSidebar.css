@@ -1,9 +1,31 @@
 .project-sidebar {
-	grid-column: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+aside article {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
-	.project-sidebar {
-		grid-column: 3 / 3;
-	}
+  .project-sidebar {
+    grid-column: 3 / 3;
+  }
+}
+
+.project-sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--color-text);
+  &:hover {
+    .project-sidebar__title {
+      color: #22d3ee;
+      transition: color 0.3s ease-in-out;
+    }
+  }
+}
+
+.project-sidebar__title {
+  font-size: 1rem;
 }
