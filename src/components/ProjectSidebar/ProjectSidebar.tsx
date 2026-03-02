@@ -19,17 +19,18 @@ function ProjectSidebar({ project }: { project: Project }) {
 
       <article className="content">
         <h2>Otros Proyectos</h2>
-
-        {otherProjects.map((p) => (
-          <Link
-            key={p.slug}
-            href={`/projects/${p.slug}`}
-            className="project-sidebar__link"
-          >
-            <Image src={p.icon} alt={p.title} width={64} height={64} />
-            <p className="project-sidebar__title">{p.title}</p>
-          </Link>
-        ))}
+        <div className="project-sidebar__container">
+          {otherProjects.map((p) => (
+            <Link
+              key={p.slug}
+              href={`/projects/${p.slug}`}
+              className="project-sidebar__link"
+            >
+              <Image src={p.icon} alt={p.title} width={64} height={64} />
+              <p className="project-sidebar__title">{p.title}</p>
+            </Link>
+          ))}
+        </div>
       </article>
     </aside>
   )

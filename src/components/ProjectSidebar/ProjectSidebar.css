@@ -29,3 +29,9 @@ aside article {
 .project-sidebar__title {
   font-size: 1rem;
 }
+
+.project-sidebar__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

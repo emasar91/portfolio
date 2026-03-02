@@ -102,6 +102,7 @@ ul li {
   border-radius: 12px;
   background: #000;
   max-height: 190px;
+  cursor: pointer;
 }
 
 /* Imagen */
