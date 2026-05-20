@@ -1,216 +1,218 @@
 {
-  "meta": {
-    "title": "Emanuel Sarco | Software Developer E2E",
-    "description": "Portafolio web que muestra el trabajo y habilidades"
-  },
-  "personal": {
-    "name": "Emanuel Sarco",
-    "title": "Software Developer E2E",
-    "location": "Buenos Aires, Argentina",
-    "avatar": "/assets/images/profile.png",
-    "email": "emasar91@gmail.com",
-    "phone": "+54 9 11 6480 3422",
-    "availableForWork": true,
-    "badges": [
-      "Web Developer",
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "JavaScript"
-    ],
-    "social": [
-      {
-        "platform": "GitHub",
-        "url": "https://github.com/emasar91",
-        "icon": "github"
-      },
-      {
-        "platform": "LinkedIn",
-        "url": "https://www.linkedin.com/in/emanuel-sarco/",
-        "icon": "linkedin"
-      },
-      {
-        "platform": "Download",
-        "url": "/assets/pdf/CV Sarco Emanuel FrontEnd.pdf",
-        "icon": "download"
-      }
-    ]
-  },
-  "about": {
-    "bio": "Desarrollador Frontend (React) con 5 años de experiencia desarrollando aplicaciones web escalables con React, Next.js y TypeScript. Trabajo con enfoque Fullstack, colaborando en la integración con servicios Backend (Node.js, Express) y en la definición de contratos de API para garantizar flujos de datos robustos y mantenibles. Especializado en optimización de performance y arquitectura de componentes reutilizables, con experiencia en el sector bancario y en proyectos de alta complejidad.",
-    "languages": [
-      {
-        "name": "Español",
-        "proficiency": "Nativo",
-        "level": 100
-      },
-      {
-        "name": "Inglés",
-        "proficiency": "Intermedio",
-        "level": 50
-      }
-    ]
-  },
-  "navigation": [
-    {
-      "label": "Inicio",
-      "href": "/"
-    },
-    {
-      "label": "Experiencia",
-      "href": "#experiencia"
-    },
-    {
-      "label": "Estudios",
-      "href": "#estudios"
-    },
-    {
-      "label": "Habilidades",
-      "href": "#habilidades"
-    },
-    {
-      "label": "Proyectos",
-      "href": "#proyectos"
-    }
-  ],
-  "experience": [
-    {
-      "title": "Desarrollador Front End React/Next",
-      "company": "OneInfo Consulting - Banco Galicia",
-      "period": "11/2024 - 12/2025",
-      "achievements": [
-        "Refactoricé componentes clave para mejorar la mantenibilidad y reutilización del código, migrando lógica de endpoints hacia hooks personalizados y estado global (Zustand).",
-        "Implementé nuevas funcionalidades desde diseños en Figma y desarrollé interfaces coherentes cuando no había prototipos disponibles.",
-        "Corregí errores funcionales y visuales en la SPA, contribuyendo a una experiencia de usuario más fluida y consistente."
-      ],
-      "technologies": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Formik",
-        "Zustand",
-        "API Rest",
-        "CSS",
-        "Brick"
-      ]
-    },
-    {
-      "title": "Desarrollador Front End React/Next",
-      "company": "ESolutions - Konecta",
-      "period": "07/2022 - 08/2024",
-      "achievements": [
-        "Mejoré la performance de la aplicación, reduciendo en un 20% el tiempo de carga entre pantallas.",
-        "Desarrollé un módulo de personalización de mensajes con emojis, mejorando la experiencia de usuario.",
-        "Corregí más de 50 errores funcionales o de diseño, asegurando la estabilidad del producto."
-      ],
-      "technologies": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Axios",
-        "Formik",
-        "Material UI",
-        "API Rest",
-        "CSS",
-        "Styled-Component",
-        "ContextApi"
-      ]
-    },
-    {
-      "title": "Desarrollador Full Stack React/Node",
-      "company": "Sirena (Zenvia)",
-      "period": "07/2020 - 06/2022",
-      "achievements": [
-        "Desarrollé más de 5 integraciones para el Marketplace de Sirena, incrementando en un 30% las aplicaciones disponibles Trello, Google Drive, MailChimp, Cotizaciones, entre otras).",
-        "Participé en el diseño conceptual y la configuración de integraciones, facilitando la adopción por parte de los usuarios.",
-        "Implementé el backend completo de las integraciones, diseñando APIs y lógica de negocio con Node.js, Express y MongoDB, garantizando escalabilidad, seguridad y consistencia de datos."
-      ],
-      "technologies": [
-        "React",
-        "Mongo",
-        "Node",
-        "Koa",
-        "Axios",
-        "Redux",
-        "Formik",
-        "Material UI",
-        "CSS",
-        "API Rest"
-      ]
-    }
-  ],
-  "credentials": {
-    "certifications": [
-      {
-        "name": "Certified UX Professional",
-        "issuer": "Nielsen Norman Group",
-        "date": "2022",
-        "logo": "/assets/images/nng-logo.png"
-      },
-      {
-        "name": "Professional Product Designer",
-        "issuer": "Interaction Design Foundation",
-        "date": "2021",
-        "logo": "/assets/images/generic-military-logo.png"
-      },
-      {
-        "name": "Design Leadership Certification",
-        "issuer": "IDEO",
-        "date": "2020",
-        "logo": "/assets/images/ideo-logo.png"
-      }
-    ],
-    "education": [
-      {
-        "degree": "Tecnicatura Superior en Programación",
-        "institution": "Teclab Instituto Superior",
-        "year": "2022-2024",
-        "logo": "/assets/images/teclab.jpg",
-        "description": "Graduado/Recibido"
-      },
-      {
-        "degree": "Desarrollador Full Stack JavaScript",
-        "institution": "UTN BA",
-        "year": "2020",
-        "logo": "/assets/images/utn.ba-logo.jpg",
-        "description": "200 Hs Cátedra"
-      },
-      {
-        "degree": "Licenciatura en Sistemas",
-        "institution": "Universidad Nacional General Sarmiento",
-        "year": "2015-2017",
-        "logo": "/assets/images/ungs.jpg",
-        "description": "Cursado hasta 2° año"
-      }
-    ]
-  },
-  "technicalSkills": {
-    "Lenguajes": ["JavaScript", "TypeScript"],
-    "Frameworks/Librerías": [
-      "React",
-      "Next.js",
-      "Node.js,",
-      "Zustand",
-      "Redux",
-      "Context Api",
-      "Formik",
-      "Material UI",
-      "Styled-Component",
-      "Shadcn UI",
-      "Tailwind CSS",
-      "Intl"
-    ],
-    "Herramientas": [
-      "Git",
-      "GitHub",
-      "GitLab",
-      "Bitbucket",
-      "Jenkins",
-      "Postman",
-      "VS Code",
-      "Jira"
-    ],
-    "Base de datos": ["MongoDB"],
-    "Metodología Ágil": ["Scrum"]
-  }
+	"meta": {
+		"title": "Emanuel Sarco | Software Developer E2E",
+		"description": "Portafolio web que muestra el trabajo y habilidades"
+	},
+	"personal": {
+		"name": "Emanuel Sarco",
+		"title": "Software Developer E2E",
+		"location": "Buenos Aires, Argentina",
+		"avatar": "/assets/images/profile.png",
+		"email": "emasar91@gmail.com",
+		"phone": "+54 9 11 6480 3422",
+		"availableForWork": true,
+		"badges": [
+			"Web Developer",
+			"React.js",
+			"Next.js",
+			"TypeScript",
+			"JavaScript"
+		],
+		"social": [
+			{
+				"platform": "GitHub",
+				"url": "https://github.com/emasar91",
+				"icon": "github"
+			},
+			{
+				"platform": "LinkedIn",
+				"url": "https://www.linkedin.com/in/emanuel-sarco/",
+				"icon": "linkedin"
+			},
+			{
+				"platform": "Download",
+				"url": "/assets/pdf/CV Sarco Emanuel FrontEnd.pdf",
+				"icon": "download"
+			}
+		]
+	},
+	"about": {
+		"bio": "Desarrollador Frontend (React) con más de 5 años de experiencia liderando el diseño y la construcción de aplicaciones web escalables con React, Next.js y TypeScript. Enfoque Fullstack, colaborando estrechamente en la arquitectura de servicios Backend con Node.js, Express y MongoDB, y en la definición de contratos de API robustos.\nEspecializado en optimización de performance, creación de componentes reutilizables y aplicación de buenas prácticas de ingeniería de software\nIntegrando herramientas de desarrollo asistido por IA (GitHub Copilot / LLM APIs) para acelerar ciclos de entrega.",
+		"languages": [
+			{
+				"name": "Español",
+				"proficiency": "Nativo",
+				"level": 100
+			},
+			{
+				"name": "Inglés",
+				"proficiency": "Intermedio",
+				"level": 50
+			}
+		]
+	},
+	"navigation": [
+		{
+			"label": "Inicio",
+			"href": "/"
+		},
+		{
+			"label": "Experiencia",
+			"href": "#experiencia"
+		},
+		{
+			"label": "Estudios",
+			"href": "#estudios"
+		},
+		{
+			"label": "Habilidades",
+			"href": "#habilidades"
+		},
+		{
+			"label": "Proyectos",
+			"href": "#proyectos"
+		}
+	],
+	"experience": [
+		{
+			"title": "Desarrollador Front End React/Next",
+			"company": "OneInfo Consulting - Banco Galicia",
+			"period": "11/2024 - 12/2025",
+			"achievements": [
+				"Lideré el rediseño arquitectónico de componentes clave para mejorar la mantenibilidad y reutilización del código, migrando lógica compleja de endpoints hacia hooks personalizados y estado global (Zustand).",
+				"Implementé nuevas funcionalidades interconectando diseños en Figma y definiendo interfaces coherentes y robustas ante la ausencia de prototipos iniciales, colaborando activamente con equipos de producto y diseño.",
+				"Optimicé los flujos de trabajo de desarrollo, depuración y exploración de soluciones técnicas mediante el uso estratégico de herramientas de desarrollo asistido por Inteligencia Artificial (GitHub Copilot).",
+				"Corregí errores funcionales y visuales críticos en la SPA, asegurando la estabilidad del producto y garantizando una experiencia de usuario fluida y consistente en producción."
+			],
+			"technologies": [
+				"Next.js",
+				"React",
+				"TypeScript",
+				"Formik",
+				"Zustand",
+				"API Rest",
+				"CSS",
+				"Brick"
+			]
+		},
+		{
+			"title": "Desarrollador Front End React/Next",
+			"company": "ESolutions - Konecta",
+			"period": "07/2022 - 08/2024",
+			"achievements": [
+				"Mejoré la performance de la aplicación a nivel arquitectura, logrando una reducción del 20% en el tiempo de carga entre pantallas.",
+				"Aseguré la resiliencia del producto mediante el monitoreo y observabilidad de servicios cloud con New Relic, analizando métricas de rendimiento y comportamiento de la app para la detección temprana y resolución de fallas.",
+				"Garanticé la calidad y estabilidad del software implementando pruebas unitarias y de integración automatizadas utilizando Jest.",
+				"Diseñé y desarrollé un módulo dinámico de personalización de mensajes con emojis, incrementando significativamente los índices de engagement y la experiencia del usuario."
+			],
+			"technologies": [
+				"Next.js",
+				"React",
+				"TypeScript",
+				"Axios",
+				"Formik",
+				"Material UI",
+				"API Rest",
+				"CSS",
+				"Styled-Component",
+				"ContextApi"
+			]
+		},
+		{
+			"title": "Desarrollador Full Stack React/Node",
+			"company": "Sirena (Zenvia)",
+			"period": "07/2020 - 06/2022",
+			"achievements": [
+				"Desarrollé más de 5 integraciones para el Marketplace de Sirena, incrementando en un 30% las aplicaciones disponibles (Trello, Google Drive, MailChimp, Cotizaciones, entre otras).",
+				"Participé en el diseño conceptual y la configuración de integraciones, facilitando la adopción por parte de los usuarios.",
+				"Implementé el backend completo de las integraciones, diseñando APIs y lógica de negocio con Node.js, Express y MongoDB, garantizando escalabilidad, seguridad y consistencia de datos."
+			],
+			"technologies": [
+				"React",
+				"Mongo",
+				"Node",
+				"Koa",
+				"Axios",
+				"Redux",
+				"Formik",
+				"Material UI",
+				"CSS",
+				"API Rest"
+			]
+		}
+	],
+	"credentials": {
+		"certifications": [
+			{
+				"name": "Certified UX Professional",
+				"issuer": "Nielsen Norman Group",
+				"date": "2022",
+				"logo": "/assets/images/nng-logo.png"
+			},
+			{
+				"name": "Professional Product Designer",
+				"issuer": "Interaction Design Foundation",
+				"date": "2021",
+				"logo": "/assets/images/generic-military-logo.png"
+			},
+			{
+				"name": "Design Leadership Certification",
+				"issuer": "IDEO",
+				"date": "2020",
+				"logo": "/assets/images/ideo-logo.png"
+			}
+		],
+		"education": [
+			{
+				"degree": "Tecnicatura Superior en Programación",
+				"institution": "Teclab Instituto Superior",
+				"year": "2022-2024",
+				"logo": "/assets/images/teclab.jpg",
+				"description": "Graduado/Recibido"
+			},
+			{
+				"degree": "Desarrollador Full Stack JavaScript",
+				"institution": "UTN BA",
+				"year": "2020",
+				"logo": "/assets/images/utn.ba-logo.jpg",
+				"description": "200 Hs Cátedra"
+			},
+			{
+				"degree": "Licenciatura en Sistemas",
+				"institution": "Universidad Nacional General Sarmiento",
+				"year": "2015-2017",
+				"logo": "/assets/images/ungs.jpg",
+				"description": "Cursado hasta 2° año"
+			}
+		]
+	},
+	"technicalSkills": {
+		"Lenguajes": ["JavaScript", "TypeScript"],
+		"Frameworks/Librerías": [
+			"React",
+			"Next.js",
+			"Node.js,",
+			"Zustand",
+			"Redux",
+			"Context Api",
+			"Formik",
+			"Material UI",
+			"Styled-Component",
+			"Shadcn UI",
+			"Tailwind CSS",
+			"Intl"
+		],
+		"Herramientas": [
+			"Git",
+			"GitHub",
+			"GitLab",
+			"Bitbucket",
+			"Jenkins",
+			"Postman",
+			"VS Code",
+			"Jira"
+		],
+		"Base de datos": ["MongoDB"],
+		"Metodología Ágil": ["Scrum"]
+	}
 }
